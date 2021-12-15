@@ -1,0 +1,72 @@
+/* body {
+    align-items: flex;
+} */
+
+.navbar {
+    position: absolute;
+    width: 100vw;
+    /* background-color: rgba(255, 255, 255, 0.185); */
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0));
+    z-index: 100;
+}
+
+.navbar_container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding-left: 3vw;
+}
+
+.logo {
+    width: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.profile {
+    display: flex;
+}
+
+li, button {
+    cursor: pointer;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+}
+
+.nav_btn {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(0, 0, 0, 0.20);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav_btn:hover {
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.profile_container {
+    grid-column: 8/9;
+}
+
+@media screen and (max-width: 590px) {
+    .nav_btn {
+        font-size: 12px;
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+/* @media screen and (max-width: 760px) {
+    .profile_container, .navbar_container{
+        display: none;
+    }
+} */
