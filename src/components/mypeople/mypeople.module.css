@@ -19,6 +19,12 @@
     border-radius: 20px;
 }
 
+.heading {
+    color: aliceblue;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
 .card_img {
     width: 250px;
     position: relative;

@@ -38,6 +38,7 @@ class People extends React.Component {
             db.collection('users').doc(auth.currentUser.uid).get()
             .then((snapshot) => {
                 const data = snapshot.data()
+                console.log(data)
                 this.setState({
                     people: data.people,
                     isLoading:false
@@ -66,6 +67,7 @@ class People extends React.Component {
                             
                         {people.length>0?
                         <div className={style.container_cards}>
+                            <h1 className={style.heading}>My People</h1>
                             {people.map((person) => <PeopleCard 
                                 name={person.name}
                                 email={person.email}
@@ -76,7 +78,9 @@ class People extends React.Component {
                             />)}
                         </div>
                         :
-                        <div className={style.container_cards}>No person added yet</div>}
+                        <div className={style.container_cards}>
+                            <h1 className={style.heading}>People</h1>
+                            No person added yet</div>}
                             
                         </div>)
                         }

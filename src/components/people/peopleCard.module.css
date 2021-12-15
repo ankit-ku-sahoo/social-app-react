@@ -7,6 +7,12 @@
   padding: 20px;
 }
 
+.heading {
+  color: aliceblue;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
 .header button {
   background: none;
   background-color: rgba(79, 79, 255, 0.541);

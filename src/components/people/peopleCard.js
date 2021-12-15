@@ -40,6 +40,10 @@ async function savePerson(person) {
         // }
 
         data.people.push(person)
+        db.collection('users').doc(user.uid)
+        .update({
+            people: data.people
+        })
         // console.log(data)
     }
 }

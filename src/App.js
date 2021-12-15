@@ -13,6 +13,8 @@ import './App.css';
 import {React,useState} from 'react';
 import './firebase'
 
+// git remote add origin https://github.com/ankit-ku-sahoo/social-app.git
+
 const App = () => {
   const [isLoggedIn, setisLoggedIn] = useState(false)
   function login() {
